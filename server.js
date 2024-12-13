@@ -7,7 +7,7 @@ const app = express();
 
 // Enable CORS for your React app's domain
 app.use(cors({
-    origin: 'http://localhost:3000' // Update this with your React app's URL
+    origin: ['https://42-Ametus.github.io', 'http://localhost:3000']
 }));
 app.use(express.json());
 
