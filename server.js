@@ -5,16 +5,15 @@ require('dotenv').config();
 
 const app = express();
 
-// Enable CORS for your React app's domain
 app.use(cors({
     origin: [
         'https://42-ametus.github.io',
         'http://localhost:3000',
         'https://catbuslogi.com'
     ],
-    methods: ['GET', 'POST'], // Explicitly state allowed methods
-    credentials: true, // If you need to send cookies
-    allowedHeaders: ['Content-Type', 'Authorization'] // Explicitly allow headers
+    methods: ['GET', 'POST'],
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
